@@ -7,10 +7,36 @@
 }
 
 body {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+
+.navbar a {
+  color: #707070;
+}
+.navbar a:hover {
+  color: #707070;
+}
+.navbar .nav-item {
+  font-weight: 400;
+}
+.navbar .nav-link:hover {
+  color: #fff;
+  background-color: #6B6B6B;
 }
 
 .navbar-nav {
   margin-right: 0px;
+}
+
+.navbar-brand {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #707070;
+  text-transform: uppercase;
+  font-size: clamp(1rem, calc( 2vw - 10px ), 1.3rem);
+}
+.navbar-brand img {
+  margin-right: 0.5em;
 }

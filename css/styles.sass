@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap')
 
 /* Variables */
-$main-font-size: 1.2rem
+$main-font-size: 1rem //* This in equivalent to 16px */
 $main-font-color: #707070
 $main-title-color: #2A00D5
 $second-title-color: #4E4992
@@ -9,9 +9,6 @@ $white: #fff
 $footer-color: #6B6B6B
 $title-font-family: "Montserrat", sans-serif
 $text-font-family: "Lato", sans-serif
-
-
-
 
 
 *
@@ -22,6 +19,27 @@ $text-font-family: "Lato", sans-serif
 body
     font-size: $main-font-size
     font-family: $text-font-family
+    font-weight: 300
 
+.navbar
+    a
+        color: $main-font-color
+        &:hover
+            color: $main-font-color
+    .nav-item
+        font-weight: 400
+    .nav-link
+        &:hover
+            color: $white
+            background-color: $footer-color
 .navbar-nav
     margin-right: 0px
+
+.navbar-brand
+    font-family: $title-font-family
+    font-weight: 600
+    color: $main-font-color
+    text-transform: uppercase
+    font-size: clamp($main-font-size, calc( 2vw - 10px ), 1.3rem)
+    img
+        margin-right: 0.5em
