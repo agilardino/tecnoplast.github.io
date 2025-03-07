@@ -132,6 +132,7 @@ body {
 .productos .btn {
   border: none;
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 .productos .btn-primary {
   background-color: #4E4992;
