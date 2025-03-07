@@ -13,6 +13,9 @@ body {
   text-wrap: pretty;
 }
 
+.navbar {
+  height: 80px;
+}
 .navbar a {
   color: #707070;
   margin-right: 0;
