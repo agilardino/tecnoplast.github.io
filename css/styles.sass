@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap')
 
 /* Variables */
-$main-font-size: 1rem //* This in equivalent to 16px */
+$main-font-size: 1.10rem //* This in equivalent to 16px */
 $main-font-color: #707070
 $main-title-color: #2A00D5
 $second-title-color: #4E4992
@@ -9,6 +9,7 @@ $white: #fff
 $footer-color: #6B6B6B
 $title-font-family: "Montserrat", sans-serif
 $text-font-family: "Lato", sans-serif
+$title-font-size: clamp(1.5rem, 3vw, 1.8rem)
 
 
 *
@@ -20,10 +21,12 @@ body
     font-size: $main-font-size
     font-family: $text-font-family
     font-weight: 300
+    text-wrap: pretty
 
 .navbar
     a
         color: $main-font-color
+        margin-right: 0
         &:hover
             color: $main-font-color
     .nav-item
@@ -44,6 +47,82 @@ body
     font-weight: 600
     color: $main-font-color
     text-transform: uppercase
-    font-size: clamp($main-font-size, calc( 2vw - 10px ), 1.3rem)
+    font-size: clamp(0.8rem, 1vw , calc($main-font-size + 5px))
+    margin-left: 0
     img
         margin-right: 0.5em
+
+.imgmain
+    background-image: url('../images/soluciones-desechables-main.jpg')
+    width: 100%
+    height: 450px
+    background-position: center
+    background-size: cover
+    position: relative
+    z-index: -1
+    color: $white
+    font-family: $title-font-family
+    font-weight: 600
+    font-size: clamp(1rem, 5vw, 5.25ch)
+    align-content: center
+    &::before
+        content: ""
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: rgba(0, 0, 0, 0.5)
+        z-index: -1
+    h3
+        width: 70%
+        font-size: clamp($main-font-size, 3vw, 1.25rem)
+        padding-block: .75em 
+        line-height: 1.25
+        font-weight: 300
+
+.welcome
+    margin-top: 100px
+    color: $main-font-color
+    font-family: $text-font-family
+    font-weight: 300
+    text-align: left
+    padding: 0
+    h1
+        color: $main-title-color
+        font-family: $title-font-family
+        font-size: $title-font-size
+        text-transform: uppercase
+        margin-bottom: 40px
+    p > span
+        font-weight: 600
+
+.productos
+    margin-top: 60px
+    color: $main-font-color
+    font-family: $text-font-family
+    h2
+        font-size: $title-font-size
+        text-transform: uppercase
+        color: $main-title-color
+        margin-bottom: 60px
+    .card
+        border: none
+        font-family: $text-font-family
+        color: $main-font-color
+    .card-img-top
+        height: 210px
+        border-radius: 0
+        object-fit: cover
+        object-position: top
+    .card-title
+        font-family: $title-font-family
+        color: $main-title-color
+        text-transform: uppercase
+        font-weight: 600
+        padding-block: 1em
+    .btn
+        border: none
+        margin-top: 30px
+    .btn-primary
+        background-color: $second-title-color
