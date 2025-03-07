@@ -65,6 +65,8 @@ body
     font-weight: 600
     font-size: clamp(1rem, 5vw, 5.25ch)
     align-content: center
+    @media (max-width: 991) 
+        height: 250px
     &::before
         content: ""
         position: absolute
@@ -72,14 +74,14 @@ body
         left: 0
         width: 100%
         height: 100%
-        background-color: rgba(0, 0, 0, 0.5)
+        background-color: rgba(0, 0, 0, 0.55)
         z-index: -1
     h3
         width: 70%
-        font-size: clamp($main-font-size, 3vw, 1.25rem)
+        font-size: clamp($main-font-size, 3vw, 1.35rem)
         padding-block: .75em 
         line-height: 1.25
-        font-weight: 300
+        font-weight: 400
 
 .welcome
     margin-top: 100px
@@ -88,6 +90,8 @@ body
     font-weight: 300
     text-align: left
     padding: 0
+    @media ( max-width: 991px )
+        margin-top: 50px        
     h1
         color: $main-title-color
         font-family: $title-font-family
@@ -127,3 +131,40 @@ body
         margin-bottom: 30px
     .btn-primary
         background-color: $second-title-color
+
+.servicios, .contacto
+    margin-top: 30px
+    color: $main-font-color
+    font-family: $text-font-family
+    h2
+        font-size: $title-font-size
+        text-transform: uppercase
+        color: $main-title-color
+        margin-bottom: 60px
+    input[type=text], input[type=number], input[type=email], textarea
+        font-family: $text-font-family
+        font-weight: 300
+        color: $main-font-color
+    .btn
+        border: none
+        margin-bottom: 30px
+    .btn-primary
+        background-color: $second-title-color
+
+footer
+    background-color: $footer-color
+    color: $white
+    padding-block: 2em
+    font-family: $title-font-family
+    font-weight: 300
+    font-size: $main-font-size
+    span
+        font-size: 1.1rem
+        font-weight: 600
+    dt
+        font-weight: 500
+        padding-block: 0.85em
+        line-height: 1.15
+    dd
+        font-family: $text-font-family
+        font-weight: 300

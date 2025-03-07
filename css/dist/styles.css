@@ -61,6 +61,11 @@ body {
   font-size: clamp(1rem, 5vw, 5.25ch);
   align-content: center;
 }
+@media (max-width: 991) {
+  .imgmain {
+    height: 250px;
+  }
+}
 .imgmain::before {
   content: "";
   position: absolute;
@@ -68,15 +73,15 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.55);
   z-index: -1;
 }
 .imgmain h3 {
   width: 70%;
-  font-size: clamp(1.1rem, 3vw, 1.25rem);
+  font-size: clamp(1.1rem, 3vw, 1.35rem);
   padding-block: 0.75em;
   line-height: 1.25;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .welcome {
@@ -86,6 +91,11 @@ body {
   font-weight: 300;
   text-align: left;
   padding: 0;
+}
+@media (max-width: 991px) {
+  .welcome {
+    margin-top: 50px;
+  }
 }
 .welcome h1 {
   color: #2A00D5;
@@ -134,4 +144,50 @@ body {
 }
 .productos .btn-primary {
   background-color: #4E4992;
+}
+
+.servicios, .contacto {
+  margin-top: 30px;
+  color: #707070;
+  font-family: "Lato", sans-serif;
+}
+.servicios h2, .contacto h2 {
+  font-size: clamp(1.5rem, 3vw, 1.8rem);
+  text-transform: uppercase;
+  color: #2A00D5;
+  margin-bottom: 60px;
+}
+.servicios input[type=text], .servicios input[type=number], .servicios input[type=email], .servicios textarea, .contacto input[type=text], .contacto input[type=number], .contacto input[type=email], .contacto textarea {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  color: #707070;
+}
+.servicios .btn, .contacto .btn {
+  border: none;
+  margin-bottom: 30px;
+}
+.servicios .btn-primary, .contacto .btn-primary {
+  background-color: #4E4992;
+}
+
+footer {
+  background-color: #6B6B6B;
+  color: #fff;
+  padding-block: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+footer span {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+footer dt {
+  font-weight: 500;
+  padding-block: 0.85em;
+  line-height: 1.15;
+}
+footer dd {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
 }
