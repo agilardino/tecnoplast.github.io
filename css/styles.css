@@ -159,7 +159,7 @@ body {
   color: #2A00D5;
   margin-bottom: 60px;
 }
-.servicios input[type=text], .servicios input[type=number], .servicios input[type=email], .servicios textarea, .contacto input[type=text], .contacto input[type=number], .contacto input[type=email], .contacto textarea {
+.servicios input[type=text], .servicios input[type=tel], .servicios input[type=email], .servicios textarea, .contacto input[type=text], .contacto input[type=tel], .contacto input[type=email], .contacto textarea {
   font-family: "Lato", sans-serif;
   font-weight: 300;
   color: #707070;
@@ -195,4 +195,17 @@ footer dd {
 }
 footer .bi {
   font-size: 1.15em;
+}
+footer .creditos {
+  font-size: 0.85rem;
+  color: #fff;
+}
+footer .creditos a {
+  color: #fff;
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+footer .creditos a:hover {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 5px;
 }/*# sourceMappingURL=styles.css.map */
