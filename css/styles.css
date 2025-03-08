@@ -226,6 +226,9 @@ footer .creditos a:hover {
   }
 }
 
+.acerca p {
+  font-weight: 300;
+}
 .acerca h3 {
   text-align: right;
   font-size: clamp(1rem, 2vw, 1.25rem);
