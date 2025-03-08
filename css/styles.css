@@ -180,6 +180,15 @@ footer {
   font-weight: 300;
   font-size: 1.1rem;
 }
+footer a {
+  color: #fff;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+footer a:hover {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 5px;
+}
 footer span {
   font-size: 1.1rem;
   font-weight: 600;
@@ -192,6 +201,7 @@ footer dt {
 footer dd {
   font-family: "Lato", sans-serif;
   font-weight: 300;
+  padding: 0;
 }
 footer .bi {
   font-size: 1.15em;
@@ -199,6 +209,7 @@ footer .bi {
 footer .creditos {
   font-size: 0.85rem;
   color: #fff;
+  line-height: 1.5;
 }
 footer .creditos a {
   color: #fff;
@@ -208,4 +219,9 @@ footer .creditos a {
 footer .creditos a:hover {
   border-bottom: 1px solid #fff;
   padding-bottom: 5px;
+}
+@media (max-width: 768px) {
+  footer {
+    text-align: center;
+  }
 }/*# sourceMappingURL=styles.css.map */

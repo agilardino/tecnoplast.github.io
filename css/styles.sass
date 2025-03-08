@@ -157,6 +157,13 @@ footer
     font-family: $title-font-family
     font-weight: 300
     font-size: $main-font-size
+    a
+        color: $white
+        font-size: $main-font-size
+        text-decoration: none
+        &:hover
+            border-bottom: 1px solid $white
+            padding-bottom: 5px
     span
         font-size: 1.1rem
         font-weight: 600
@@ -167,11 +174,13 @@ footer
     dd
         font-family: $text-font-family
         font-weight: 300
+        padding: 0
     .bi 
         font-size: 1.15em
     .creditos
         font-size: 0.85rem
         color: $white
+        line-height: 1.5
         a
             color: $white
             font-size: 0.85rem
@@ -179,3 +188,5 @@ footer
             &:hover
                 border-bottom: 1px solid $white
                 padding-bottom: 5px
+    @media ( max-width: 768px )
+        text-align: center
