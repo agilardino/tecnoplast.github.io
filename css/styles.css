@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap");
 /* Variables */
 * {
   margin-inline: auto;
@@ -172,6 +173,33 @@ body {
   background-color: #4E4992;
 }
 
+.acerca p {
+  font-weight: 300;
+  font-family: "Lato", sans-serif;
+}
+.acerca p strong {
+  font-weight: 500;
+}
+.acerca h3 {
+  text-align: right;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: #4E4992;
+  font-weight: 400;
+}
+.acerca img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 16/9;
+}
+
+.quote p {
+  font-family: "Merriweather", serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-style: italic;
+  color: #6B6B6B;
+}
+
 footer {
   background-color: #6B6B6B;
   color: #fff;
@@ -224,20 +252,4 @@ footer .creditos a:hover {
   footer {
     text-align: center;
   }
-}
-
-.acerca p {
-  font-weight: 300;
-  font-family: "Lato", sans-serif;
-}
-.acerca h3 {
-  text-align: right;
-  font-size: clamp(1rem, 2vw, 1.25rem);
-  color: #4E4992;
-  font-weight: 400;
-}
-.acerca img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  aspect-ratio: 16/9;
 }/*# sourceMappingURL=styles.css.map */
