@@ -232,7 +232,8 @@ footer .creditos a:hover {
   color: #4E4992;
   font-weight: 400;
 }
-
-.nosotros-img {
-  height: 450px;
+.acerca img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 16/9;
 }/*# sourceMappingURL=styles.css.map */
