@@ -224,4 +224,15 @@ footer .creditos a:hover {
   footer {
     text-align: center;
   }
+}
+
+.acerca h3 {
+  text-align: right;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: #4E4992;
+  font-weight: 400;
+}
+
+.nosotros-img {
+  height: 450px;
 }/*# sourceMappingURL=styles.css.map */
