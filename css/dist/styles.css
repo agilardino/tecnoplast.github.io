@@ -184,7 +184,7 @@ body {
   color: #4E4992;
   font-weight: 400;
 }
-@media (width <= 574px) {
+@media (width <= 576px) {
   .acerca h3 {
     text-align: left;
     padding-block: 1em;
