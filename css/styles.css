@@ -274,6 +274,11 @@ body {
   color: #533FA6;
   padding-bottom: 2em;
 }
+@media (width <= 991px) {
+  .servicios-welcome h2 {
+    padding-block: 2em;
+  }
+}
 .servicios-welcome p {
   line-height: 1.5;
   font-weight: 300;
@@ -285,6 +290,12 @@ body {
 .servicios-welcome .margin-separador {
   margin-top: 5em;
   margin-bottom: 5em;
+}
+@media (width <= 991px) {
+  .servicios-welcome .margin-separador {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+  }
 }
 
 footer {
