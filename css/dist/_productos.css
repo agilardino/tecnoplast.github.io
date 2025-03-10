@@ -1,0 +1,10 @@
+.productos-principal {
+  width: 100%;
+  height: 450px;
+  background-image: url(../images/soluciones-desechables-plasticos-aluminios.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-position: center;
+  aspect-ratio: 16/9;
+}

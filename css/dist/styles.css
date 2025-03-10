@@ -207,8 +207,100 @@ body {
 }
 
 .main--service {
+  width: 100%;
+  display: flex;
+  align-items: center;
   background-color: #533FA6;
-  height: 180px;
+  height: 450px;
+  object-position: center;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+}
+@media (width <= 576px) {
+  .main--service {
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+    justify-content: space-between;
+    padding-top: 2em;
+  }
+}
+.main--service .half-width-image {
+  width: 65%;
+}
+@media (width <= 576px) {
+  .main--service .half-width-image {
+    width: 100%;
+  }
+}
+.main--service .half-width-image img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+.main--service h2 {
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1.25;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+.main--service p {
+  font-family: "Lato", sans-serif;
+  font-size: 1.15rem;
+  color: #fff;
+  font-weight: 300;
+}
+
+.servicios-welcome {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+.servicios-welcome h1 {
+  font-size: clamp(1.15rem, 5vw, 2.5rem);
+  color: #2A00D5;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.servicios-welcome h2 {
+  font-size: clamp(1.25rem, 3vw, 1.5rem);
+  text-transform: uppercase;
+  color: #533FA6;
+  padding-bottom: 2em;
+}
+@media (width <= 991px) {
+  .servicios-welcome h2 {
+    padding-block: 2em;
+  }
+}
+.servicios-welcome p {
+  line-height: 1.5;
+  font-weight: 300;
+  color: #707070;
+  font-family: "Lato", sans-serif;
+}
+.servicios-welcome p strong {
+  font-weight: 500;
+}
+.servicios-welcome .margin-separador {
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+@media (width <= 991px) {
+  .servicios-welcome .margin-separador {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+  }
+}
+
+.productos-principal {
+  width: 100%;
+  height: 450px;
+  background-image: url(./images/soluciones-desechables-plasticos-aluminios.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 footer {
