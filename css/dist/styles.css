@@ -314,7 +314,28 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   object-position: center;
-  aspect-ratio: 16/9;
+  position: relative;
+  z-index: -1;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: clamp(1rem, 5vw, 5.25ch);
+  align-content: center;
+}
+@media (max-width: 991) {
+  .productos-principal {
+    height: 250px;
+  }
+}
+.productos-principal::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: -1;
 }
 
 footer {
