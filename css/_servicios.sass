@@ -1,0 +1,60 @@
+$services-bg-color: #533FA6
+
+.main--service
+    width: 100%
+    display: flex
+    align-items: center
+    background-color: $services-bg-color
+    height: 450px
+    object-position: center
+    object-fit: cover
+    aspect-ratio: 16 / 9
+    @media (width <= 576px ) 
+        width: 100%
+        flex-direction: column
+        height: auto
+        justify-content: space-between
+        padding-top: 2em
+    .half-width-image
+        width: 65%
+        @media (width <= 576px )
+            width: 100%
+        img
+            width: 100%
+            height: 450px
+            object-fit: cover
+    
+    h2
+        color: $white
+        text-transform: uppercase
+        line-height: 1.25
+        font-weight: 600
+        font-family: $title-font-family
+    p
+        font-family: $text-font-family
+        font-size: 1.15rem
+        color: $white
+
+.servicios-welcome
+    font-family: $title-font-family
+    margin-top: 50px
+    margin-bottom: 25px
+    h1
+        font-size: clamp(1.15rem, 5vw, 2.5rem)
+        color: $main-title-color
+        font-weight: 600
+        text-transform: uppercase
+    h2
+        font-size: clamp(1.25rem, 3vw, 1.5rem)
+        text-transform: uppercase
+        color: $services-bg-color
+        padding-bottom: 2em
+    p
+        line-height: 1.5
+        font-weight: 300
+        color: $main-font-color
+        strong
+            font-weight: 500
+    .margin-separador
+        margin-top: 5em
+        margin-bottom: 5em

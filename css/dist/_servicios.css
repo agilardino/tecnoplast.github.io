@@ -1,0 +1,17 @@
+.main--service {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #533FA6;
+  height: 450px;
+  object-position: center;
+  object-fit: cover;
+}
+.main--service .half-width-image {
+  width: 60%;
+}
+.main--service .half-width-image img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}

@@ -206,6 +206,11 @@ body {
   color: #6B6B6B;
 }
 
+.main--service {
+  background-color: #533FA6;
+  height: 180px;
+}
+
 footer {
   background-color: #6B6B6B;
   color: #fff;
