@@ -203,7 +203,7 @@ body {
 
 .quote p {
   font-family: "Merriweather", serif;
-  font-size: clamp(1.75rem, 2.5vw, 2.5rem);
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
   font-weight: 600;
   font-style: italic;
   color: #6B6B6B;
