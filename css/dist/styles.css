@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap");
 /* Variables */
 * {
   margin-inline: auto;
@@ -85,7 +86,7 @@ body {
 }
 
 .welcome {
-  margin-top: 100px;
+  margin-top: calc(8rem - 20px);
   color: #707070;
   font-family: "Lato", sans-serif;
   font-weight: 300;
@@ -157,7 +158,7 @@ body {
   color: #2A00D5;
   margin-bottom: 60px;
 }
-.servicios input[type=text], .servicios input[type=number], .servicios input[type=email], .servicios textarea, .contacto input[type=text], .contacto input[type=number], .contacto input[type=email], .contacto textarea {
+.servicios input[type=text], .servicios input[type=tel], .servicios input[type=email], .servicios textarea, .contacto input[type=text], .contacto input[type=tel], .contacto input[type=email], .contacto textarea {
   font-family: "Lato", sans-serif;
   font-weight: 300;
   color: #707070;
@@ -170,6 +171,41 @@ body {
   background-color: #4E4992;
 }
 
+.acerca p {
+  font-weight: 300;
+  font-family: "Lato", sans-serif;
+}
+.acerca p strong {
+  font-weight: 500;
+}
+.acerca h3 {
+  text-align: right;
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+  color: #4E4992;
+  font-weight: 400;
+}
+@media (width <= 574px) {
+  .acerca h3 {
+    text-align: left;
+    padding-block: 1em;
+  }
+  .acerca h3 br {
+    display: none;
+  }
+}
+.acerca img {
+  object-fit: cover;
+  aspect-ratio: 16/9;
+}
+
+.quote p {
+  font-family: "Merriweather", serif;
+  font-size: clamp(1.75rem, 2.5vw, 2.5rem);
+  font-weight: 600;
+  font-style: italic;
+  color: #6B6B6B;
+}
+
 footer {
   background-color: #6B6B6B;
   color: #fff;
@@ -177,6 +213,15 @@ footer {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 1.1rem;
+}
+footer a {
+  color: #fff;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+footer a:hover {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 5px;
 }
 footer span {
   font-size: 1.1rem;
@@ -190,7 +235,27 @@ footer dt {
 footer dd {
   font-family: "Lato", sans-serif;
   font-weight: 300;
+  padding: 0;
 }
 footer .bi {
   font-size: 1.15em;
+}
+footer .creditos {
+  font-size: 0.85rem;
+  color: #fff;
+  line-height: 1.5;
+}
+footer .creditos a {
+  color: #fff;
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+footer .creditos a:hover {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 5px;
+}
+@media (max-width: 768px) {
+  footer {
+    text-align: center;
+  }
 }
