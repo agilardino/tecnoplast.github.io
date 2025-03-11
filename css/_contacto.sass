@@ -5,8 +5,6 @@
     background-size: cover
     background-repeat: no-repeat
     object-position: center
-    position: relative
-    z-index: -1
     color: $white
     font-family: $title-font-family
     font-weight: 600
@@ -15,12 +13,20 @@
     @media (max-width: 991) 
         height: 250px
     h2
-        font-size: clamp(1.24rem, 5vw, 3rem)
+        font-size: clamp(1.24rem, 5vw, 2.8rem)
         text-transform: uppercase
         font-weight: 600
+    p
+
 .logo
     padding-block: 1.25em
     span
         font-family: $title-font-family
         font-weight: 600
-        font-size: clamp(1rem, 5vw, 3.25ch)
+        font-size: clamp(1rem, 5vw, 2.75ch)
+
+.contacto
+    p, dl
+        font-size: clamp(1.15rem, 4vw, 1.25rem)
+        font-weight: 400
+        
