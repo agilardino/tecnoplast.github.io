@@ -374,6 +374,15 @@ body {
   font-weight: 600;
 }
 
+.logo {
+  padding-block: 1.25em;
+}
+.logo span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: clamp(1rem, 5vw, 3.25ch);
+}
+
 footer {
   background-color: #6B6B6B;
   color: #fff;
