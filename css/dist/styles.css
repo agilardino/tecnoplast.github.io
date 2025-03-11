@@ -345,8 +345,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   object-position: center;
-  position: relative;
-  z-index: -1;
   color: #fff;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
@@ -359,18 +357,22 @@ body {
   }
 }
 .contacto-principal h2 {
-  font-size: clamp(1.24rem, 5vw, 3rem);
+  font-size: clamp(1.24rem, 5vw, 2.8rem);
   text-transform: uppercase;
   font-weight: 600;
 }
-
 .logo {
   padding-block: 1.25em;
 }
 .logo span {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  font-size: clamp(1rem, 5vw, 3.25ch);
+  font-size: clamp(1rem, 5vw, 2.75ch);
+}
+
+.contacto p, .contacto dl {
+  font-size: clamp(1.15rem, 4vw, 1.25rem);
+  font-weight: 400;
 }
 
 footer {

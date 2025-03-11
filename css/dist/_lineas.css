@@ -1,0 +1,7 @@
+.linea--fast .card {
+  border: none;
+}
+.linea--fast .card-text ul {
+  list-style: none;
+  padding-inline-start: 0.35em;
+}

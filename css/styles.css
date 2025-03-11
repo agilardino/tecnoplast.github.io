@@ -385,6 +385,27 @@ body {
   font-weight: 400;
 }
 
+.linea--fast {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+.linea--fast .card {
+  border: none;
+}
+.linea--fast .card-title {
+  color: #707070;
+  font-weight: 600;
+}
+.linea--fast .card-text ul {
+  list-style: none;
+  padding-inline-start: 0.35em;
+  color: #707070;
+  font-size: clamp(0.95rem, 2.5vw, 1rem);
+}
+.linea--fast .card-text ul strong {
+  font-weight: 600;
+}
+
 footer {
   background-color: #6B6B6B;
   color: #fff;
