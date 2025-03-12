@@ -1,24 +1,35 @@
 [
     {
-      "nombre": "Tarrine",
-      "codigo": "0980003",
-      "material": "Elaborado en poliestireno espumado",
+      "nombre": "Repostero 4 3/4",
+      "codigo": "0507003",
+      "material": "Elaborados en poliestireno espumado",
       "presentacion": "Funda de 25 unidades",
-      "embalaje": "Funda de polietileno",
+      "embalaje": "Fund&oacute;n de polietileno",
       "moduloVenta": "20 fundas por fundón",
-      "dimensiones": "Alto: 66 mm / Ancho: 124 mm / Largo: 135 mm",
-      "color": "Blanco",
-      "imagen": "images/productos/Caja-Italiana_Calada_14gl.jpg"
+      "dimensiones": "Alto: 45.5 mm / Ancho: 120.5 mm / Largo: 54.5 mm",
+      "color": "Blanco y amarillo",
+      "imagen": "images/productos/Repostero_4_3-4.jpg"
     },
     {
-      "nombre": "Envase Redondo",
-      "codigo": "0980010",
-      "material": "Plástico PET",
-      "presentacion": "Funda de 50 unidades",
-      "embalaje": "Caja de cartón",
-      "moduloVenta": "10 cajas por fundón",
-      "dimensiones": "Alto: 70 mm / Diámetro: 120 mm",
-      "color": "Transparente",
-      "imagen": "images/productos/Contenedor_Alimentos_5_5.jpg"
-    }
+      "nombre": "Repostero de 5 onzas",
+      "codigo": "0507202",
+      "material": "Elaborados en poliestireno espumado",
+      "presentacion": "Funda de 25 unidades",
+      "embalaje": "Fund&oacute;n de polietileno",
+      "moduloVenta": "20 fundas por fund&oacute;n",
+      "dimensiones": "Alto: 35.2 mm / Diámetro: 120.5 mm / Diámetro inferior: 61.5mm",
+      "color": "Blanco y amarillo",
+      "imagen": "images/productos/Repostero_5onz.jpg"
+    },
+    {
+        "nombre": "Repostero de 5 onzas",
+        "codigo": "0507202",
+        "material": "Elaborados en poliestireno espumado",
+        "presentacion": "Funda de 25 unidades",
+        "embalaje": "Fund&oacute;n de polietileno",
+        "moduloVenta": "20 fundas por fund&oacute;n",
+        "dimensiones": "Alto: 35.2 mm / Diámetro: 120.5 mm / Diámetro inferior: 61.5mm",
+        "color": "Blanco y amarillo",
+        "imagen": "images/productos/Repostero_5onz.jpg"
+      }
   ]
