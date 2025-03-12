@@ -445,10 +445,10 @@ body {
   color: #6B6B6B;
   font-weight: 500;
 }
-.descripcion p {
+.descripcion dd {
   font-size: clamp(0.85rem, 1vw, 1rem);
   text-wrap: pretty;
-  line-height: 1;
+  line-height: 1.15;
   color: #707070;
   font-weight: 300;
 }
