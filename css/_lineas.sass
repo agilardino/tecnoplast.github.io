@@ -12,11 +12,11 @@
                 text-align: center
 .ctl-grid
     display: grid
-    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr))
+    grid-template-columns: repeat(auto-fit, minmax(315px, 1fr))
     gap: 2em    
 .productos_ctl
     background: #f8f8f8
-    padding: 15px
+    padding: 1em
     display: flex
     justify-content: center
     align-items: start
@@ -25,8 +25,8 @@
         align-content: center
 .image
     padding: 0.5em
-    width: min(200px)
-    height: 180px
+    width: min(300px)
+    height: 280px
     @media (max-width: 450px) 
         height: auto
     img
@@ -38,7 +38,8 @@
         color:$footer-color
         font-weight: 500
     p
-        font-size: clamp(1rem, 2vw, 0.9rem)
+        font-size: clamp(0.85rem, 1vw, 1rem)
         text-wrap: pretty
         line-height: 1
         color: $main-font-color
+        font-weight: 300
