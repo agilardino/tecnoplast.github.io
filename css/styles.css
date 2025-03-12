@@ -424,9 +424,8 @@ body {
 }
 
 .image {
-  padding: 0.5em;
-  width: 300px;
-  height: 280px;
+  padding: 0.25em;
+  width: 200px;
 }
 @media (max-width: 450px) {
   .image {
@@ -435,6 +434,7 @@ body {
 }
 .image img {
   width: 100%;
+  height: auto;
 }
 
 .descripcion {
