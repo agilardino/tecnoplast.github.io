@@ -1,17 +1,44 @@
 .linea--fast
     font-family: $text-font-family
-    
-    font-weight: 300
-    .card
-        border: none
-    .card-title
+    margin-bottom: 2em
+    .catalogo
+        color: $main-title-color
+        text-transform: uppercase
+        font-family: $title-font-family
+        .ctl-main-title
+            padding-block: 2.5em
+            h2
+                font-weight: 500
+                text-align: center
+.ctl-grid
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr))
+    gap: 2em    
+.productos_ctl
+    background: #f8f8f8
+    padding: 15px
+    display: flex
+    justify-content: center
+    align-items: start
+    @media (max-width: 450px) 
+        flex-direction: column
+        align-content: center
+.image
+    padding: 0.5em
+    width: min(200px)
+    height: 180px
+    @media (max-width: 450px) 
+        height: auto
+    img
+        width: 100%
+.descripcion
+    padding: 0.875em
+    h3
+        font-size: 1.5rem
+        color:$footer-color
+        font-weight: 500
+    p
+        font-size: clamp(1rem, 2vw, 0.9rem)
+        text-wrap: pretty
+        line-height: 1
         color: $main-font-color
-        font-weight: 600
-    .card-text
-        ul
-            list-style: none
-            padding-inline-start: 0.35em
-            color: $main-font-color
-            font-size: clamp(0.95rem, 2.5vw, 1rem)
-            strong
-                font-weight: 600

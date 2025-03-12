@@ -371,6 +371,7 @@ body {
   text-transform: uppercase;
   font-weight: 600;
 }
+
 .logo {
   padding-block: 1.25em;
 }
@@ -387,23 +388,68 @@ body {
 
 .linea--fast {
   font-family: "Lato", sans-serif;
-  font-weight: 300;
+  margin-bottom: 2em;
 }
-.linea--fast .card {
-  border: none;
+.linea--fast .catalogo {
+  color: #2A00D5;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
 }
-.linea--fast .card-title {
+.linea--fast .catalogo .ctl-main-title {
+  padding-block: 2.5em;
+}
+.linea--fast .catalogo .ctl-main-title h2 {
+  font-weight: 500;
+  text-align: center;
+}
+
+.ctl-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  gap: 2em;
+}
+
+.productos_ctl {
+  background: #f8f8f8;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+@media (max-width: 450px) {
+  .productos_ctl {
+    flex-direction: column;
+    align-content: center;
+  }
+}
+
+.image {
+  padding: 0.5em;
+  width: 200px;
+  height: 180px;
+}
+@media (max-width: 450px) {
+  .image {
+    height: auto;
+  }
+}
+.image img {
+  width: 100%;
+}
+
+.descripcion {
+  padding: 0.875em;
+}
+.descripcion h3 {
+  font-size: 1.5rem;
+  color: #6B6B6B;
+  font-weight: 500;
+}
+.descripcion p {
+  font-size: clamp(1rem, 2vw, 0.9rem);
+  text-wrap: pretty;
+  line-height: 1;
   color: #707070;
-  font-weight: 600;
-}
-.linea--fast .card-text ul {
-  list-style: none;
-  padding-inline-start: 0.35em;
-  color: #707070;
-  font-size: clamp(0.95rem, 2.5vw, 1rem);
-}
-.linea--fast .card-text ul strong {
-  font-weight: 600;
 }
 
 footer {
