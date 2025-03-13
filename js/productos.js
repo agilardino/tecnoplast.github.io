@@ -1,6 +1,6 @@
 async function cargarProductos() {
     try {
-        const response = await fetch('fastfood.json'); // Cargar JSON
+        const response = await fetch('../json/fastfood.json'); // Cargar JSON
         if (!response.ok) {
             throw new Error(`Error HTTP: ${response.status}`);
         }

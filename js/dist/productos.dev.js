@@ -8,7 +8,7 @@ function cargarProductos() {
         case 0:
           _context.prev = 0;
           _context.next = 3;
-          return regeneratorRuntime.awrap(fetch('fastfood.json'));
+          return regeneratorRuntime.awrap(fetch('../json/fastfood.json'));
 
         case 3:
           response = _context.sent;
