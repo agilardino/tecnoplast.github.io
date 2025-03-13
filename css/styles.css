@@ -530,12 +530,13 @@ footer .creditos a:hover {
   }
 }
 
-.chevron {
-  opacity: 0;
-  visibility: hidden;
-  display: none;
+@media (width >= 768px) {
+  .chevron {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+  }
 }
-
 @media (max-width: 450px) {
   .chevron {
     opacity: 1;
