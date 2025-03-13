@@ -20,6 +20,7 @@ body {
 }
 .navbar a:hover {
   color: #707070;
+  transition: all 0.5s ease-in-out;
 }
 .navbar .nav-item {
   font-weight: 400;
@@ -27,6 +28,7 @@ body {
 .navbar .nav-link:hover {
   color: #fff;
   background-color: #6B6B6B;
+  transition: all 0.5s ease-in-out;
 }
 
 .navbar-toggler {
@@ -46,6 +48,23 @@ body {
 }
 .navbar-brand img {
   margin-right: 0.5em;
+}
+
+.dropdown-menu a {
+  color: #707070;
+}
+.dropdown-menu a:hover {
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+
+.dropdown-item {
+  color: #707070;
+  text-transform: capitalize;
+}
+.dropdown-item:hover {
+  background-color: #6B6B6B;
+  transition: all 0.3s ease-in-out;
 }
 
 .imgmain {

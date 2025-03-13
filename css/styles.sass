@@ -30,12 +30,14 @@ body
         margin-right: 0
         &:hover
             color: $main-font-color
+            transition: all .5s ease-in-out
     .nav-item
         font-weight: 400
     .nav-link
         &:hover
             color: $white
             background-color: $footer-color
+            transition: all .5s ease-in-out
 
 .navbar-toggler
     border: none
@@ -51,6 +53,18 @@ body
     margin-left: 0
     img
         margin-right: 0.5em
+.dropdown-menu
+    a
+        color: $main-font-color
+        &:hover
+            color: $white
+            transition: all .5s ease-in-out
+.dropdown-item
+    color: $main-font-color
+    text-transform: capitalize
+    &:hover
+        background-color: $footer-color
+        transition: all 0.3s ease-in-out
 
 .imgmain
     background-image: url('../images/soluciones-desechables-main.jpg')

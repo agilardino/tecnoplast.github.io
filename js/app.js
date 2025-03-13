@@ -8,3 +8,4 @@ const titles = {
 
 // Cambia el título según la página actual
 document.title = titles[window.location.pathname] || "TecnoPlast del Perú - Líder en soluciones plásticas";
+

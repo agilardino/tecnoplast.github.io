@@ -156,7 +156,7 @@ function obtenerCategoriaDeURL() {
         if (path.includes("linea-retail.html")) return "retail";
         if (path.includes("linea-limpieza.html")) return "limpieza";
         if (path.includes("linea-bolsas.html")) return "bolsas";
-        if (path.includes("linea-impresa.html")) return "bolsas";
+        if (path.includes("linea-impresa.html")) return "impresa";
         return null;
     }
 function renderizarProductos(listaProductos){
