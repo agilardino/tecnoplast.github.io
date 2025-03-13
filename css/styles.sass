@@ -12,7 +12,6 @@ $title-font-family: "Montserrat", sans-serif
 $text-font-family: "Lato", sans-serif
 $title-font-size: clamp(1.5rem, 3vw, 1.8rem)
 
-
 *
     margin-inline: auto
     padding: 0
@@ -38,6 +37,7 @@ body
             color: $white
             background-color: $footer-color
             transition: all .5s ease-in-out
+
 .navbar-toggler
     border: none
     &:focus
@@ -52,12 +52,14 @@ body
     margin-left: 0
     img
         margin-right: 0.5em
+
 .dropdown-menu
     a
         color: $main-font-color
         &:hover
             color: $white
             transition: all .5s ease-in-out
+
 .dropdown-item
     color: $main-font-color
     text-transform: capitalize
@@ -78,8 +80,8 @@ body
     font-weight: 600
     font-size: clamp(1rem, 5vw, 5.25ch)
     align-content: center
-    @media (max-width: 991) 
-        height: 250px
+    @media (width <= 450px) 
+        height: 100dvh
     &::before
         content: ""
         position: absolute
@@ -250,3 +252,39 @@ footer
     @media ( max-width: 768px )
         text-align: center
 
+.chevron
+    opacity: 0
+    visibility: hidden
+    display: none
+
+@media (max-width: 450px) 
+    .chevron
+        opacity: 1
+        visibility: visible
+        display: block
+        animation: vermas .5s alternate infinite ease-in-out
+        z-index: 999
+        position: fixed
+        bottom: 10px
+        left: 50%
+        transform: translateX(-50%)
+        font-size: 2rem
+        font-family: $text-font-family
+    .bi
+        color: $white
+        font-size: 3rem
+        text-align: center
+    .pulse
+        animation: pulse-animation 2s infinite
+
+@keyframes vermas
+    0%
+        transform: translateY(-5px)
+    100%
+        transform: translateY(0)
+    
+@keyframes pulse-animation
+    0%
+        box-shadow: 0 0 0 0px #25d3664d rgba(0, 0, 0, 0.2)
+    100%
+        box-shadow: 0 0 0 20px rgba(0, 0, 0, 0)

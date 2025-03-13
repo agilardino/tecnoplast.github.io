@@ -81,9 +81,9 @@ body {
   font-size: clamp(1rem, 5vw, 5.25ch);
   align-content: center;
 }
-@media (max-width: 991) {
+@media (width <= 450px) {
   .imgmain {
-    height: 250px;
+    height: 100dvh;
   }
 }
 .imgmain::before {
@@ -517,5 +517,53 @@ footer .creditos a:hover {
 @media (max-width: 768px) {
   footer {
     text-align: center;
+  }
+}
+
+.chevron {
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+}
+
+@media (max-width: 450px) {
+  .chevron {
+    opacity: 1;
+    visibility: visible;
+    display: block;
+    animation: vermas 0.5s alternate infinite ease-in-out;
+    z-index: 999;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    font-family: "Lato", sans-serif;
+  }
+
+  .bi {
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .pulse {
+    animation: pulse-animation 2s infinite;
+  }
+}
+@keyframes vermas {
+  0% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0px #25d3664d rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
   }
 }
