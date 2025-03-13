@@ -8,7 +8,7 @@ function cargarProductos() {
         case 0:
           _context.prev = 0;
           _context.next = 3;
-          return regeneratorRuntime.awrap(fetch('../data/fastfood.json'));
+          return regeneratorRuntime.awrap(fetch('https://raw.githubusercontent.com/agilardino/tecnoplast.github.io/refs/heads/main/data/fastfood.json'));
 
         case 3:
           response = _context.sent;

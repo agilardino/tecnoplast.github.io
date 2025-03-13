@@ -1,6 +1,6 @@
 async function cargarProductos() {
     try {
-        const response = await fetch('../data/fastfood.json'); // Cargar JSON
+        const response = await fetch('https://raw.githubusercontent.com/agilardino/tecnoplast.github.io/refs/heads/main/data/fastfood.json'); // Cargar JSON
         if (!response.ok) {
             throw new Error(`Error HTTP: ${response.status}`);
         }
