@@ -1,5 +1,6 @@
-[
-    {
+{
+  "fastfood": [  
+  {
       "nombre": "Repostero 4 3/4",
       "codigo": "0507003",
       "material": "Elaborados en poliestireno espumado",
@@ -33,3 +34,5 @@
         "imagen": "images/productos/Repostero_5onz.jpg"
       }
   ]
+}
+  
