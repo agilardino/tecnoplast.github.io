@@ -43,47 +43,127 @@
 
 // // Ejecutar la función al cargar la página
 // cargarProductos();
-
-
-
-
-async function cargarProductos() {
-    try {
-        const response = await fetch('../data/catalogo.json');
-        if (!response.ok) {
-            throw new Error(`Error HTTP: ${response.status}`);
+const productos = {
+    fastfood: [
+        {
+            nombre: "Repostero 4 3/4",
+            codigo: "0507003",
+            material: "Elaborados en poliestireno espumado",
+            presentacion: "Funda de 25 unidades",
+            embalaje: "Fund&oacute;n de polietileno",
+            moduloVenta: "20 fundas por fundón",
+            dimensiones: "Alto: 45.5 mm / Ancho: 120.5 mm / Largo: 54.5 mm",
+            color: "Blanco y amarillo",
+            imagen: "images/productos/Repostero_4_3-4.jpg"
+        },
+        {
+            nombre: "Repostero de 5 onzas",
+            codigo: "0507202",
+            material: "Elaborados en poliestireno espumado",
+            presentacion: "Funda de 25 unidades",
+            embalaje: "Fund&oacute;n de polietileno",
+            moduloVenta: "20 fundas por fund&oacute;n",
+            dimensiones: "Alto: 35.2 mm / Diámetro: 120.5 mm / Diámetro inferior: 61.5mm",
+            color: "Blanco y amarillo",
+            imagen: "images/productos/Repostero_5onz.jpg"
+        },
+        {
+            nombre: "Repostero de 5 onzas",
+            codigo: "0507202",
+            material: "Elaborados en poliestireno espumado",
+            presentacion: "Funda de 25 unidades",
+            embalaje: "Fund&oacute;n de polietileno",
+            moduloVenta: "20 fundas por fund&oacute;n",
+            dimensiones: "Alto: 35.2 mm / Diámetro: 120.5 mm / Diámetro inferior: 61.5mm",
+            color: "Blanco y amarillo",
+            imagen: "images/productos/Repostero_5onz.jpg"
+          },
+          {
+              nombre: "Repostero de 5 onzas",
+              codigo: "0507202",
+              material: "Elaborados en poliestireno espumado",
+              presentacion: "Funda de 25 unidades",
+              embalaje: "Fund&oacute;n de polietileno",
+              moduloVenta: "20 fundas por fund&oacute;n",
+              dimensiones: "Alto: 35.2 mm / Diámetro: 120.5 mm / Diámetro inferior: 61.5mm",
+              color: "Blanco y amarillo",
+              imagen: "images/productos/Repostero_5onz.jpg"
+            },
+            {
+                nombre: "Repostero de 5 onzas",
+                codigo: "0507202",
+                material: "Elaborados en poliestireno espumado",
+                presentacion: "Funda de 25 unidades",
+                embalaje: "Fund&oacute;n de polietileno",
+                moduloVenta: "20 fundas por fund&oacute;n",
+                dimensiones: "Alto: 35.2 mm / Diámetro: 120.5 mm / Diámetro inferior: 61.5mm",
+                color: "Blanco y amarillo",
+                imagen: "images/productos/Repostero_5onz.jpg"
+              },
+              {
+                  nombre: "Repostero de 5 onzas",
+                  codigo: "0507202",
+                  material: "Elaborados en poliestireno espumado",
+                  presentacion: "Funda de 25 unidades",
+                  embalaje: "Fund&oacute;n de polietileno",
+                  moduloVenta: "20 fundas por fund&oacute;n",
+                  dimensiones: "Alto: 35.2 mm / Diámetro: 120.5 mm / Diámetro inferior: 61.5mm",
+                  color: "Blanco y amarillo",
+                  imagen: "images/productos/Repostero_5onz.jpg"
+                }
+    ],
+    limpieza: [
+        {
+            nombre: "Esponja Multiusos",
+            codigo: "0980020",
+            material: "Fibra sintética",
+            presentacion: "Pack de 10 unidades",
+            embalaje: "Caja de cartón",
+            moduloVenta: "10 cajas por fundón",
+            dimensiones: "Alto: 20 mm / Ancho: 100 mm / Largo: 150 mm",
+            color: "Verde",
+            imagen: "images/productos/esponja.jpg"
         }
-        const productos = await response.json();
-
-        // Detectar la categoría según el nombre de la página
-        const categoria = obtenerCategoriaDeURL();
-
-        if (!categoria || !productos[categoria]) {
-            console.error("Categoría no encontrada en el JSON");
-            return;
+    ],
+    bolsas: [
+        {
+            nombre: "Bolsa Biodegradable",
+            codigo: "0980030",
+            material: "Plástico biodegradable",
+            presentacion: "Paquete de 100 unidades",
+            embalaje: "Caja de cartón",
+            moduloVenta: "5 cajas por fundón",
+            dimensiones: "Alto: 500 mm / Ancho: 300 mm",
+            color: "Verde",
+            imagen: "images/productos/bolsa.jpg"
         }
+    ]
+};
 
-        renderizarProductos(productos[categoria]);
-    } catch (error) {
-        console.error('Error al cargar los productos:', error);
+document.addEventListener("DOMContentLoaded", function (){
+    const categoria = obtenerCategoriaDeURL();
+
+    if (!categoria || !productos[categoria]){
+        console.error("Categoría no encontrada");
+        return;
     }
-}
+    renderizarProductos(productos[categoria]);
+});
 
 function obtenerCategoriaDeURL() {
-    const path = window.location.pathname;
-    if (path.includes("linea-fastfood.html")) return "fastfood";
-    if (path.includes("linea-retail.html")) return "retail";
-    if (path.includes("linea-limpieza.html")) return "limpieza";
-    if (path.includes("linea-bolsas.html")) return "bolsas";
-    if (path.includes("linea-impresa.html")) return "bolsas";
-    return null;
-}
+        const path = window.location.pathname;
+        if (path.includes("linea-fastfood.html")) return "fastfood";
+        if (path.includes("linea-retail.html")) return "retail";
+        if (path.includes("linea-limpieza.html")) return "limpieza";
+        if (path.includes("linea-bolsas.html")) return "bolsas";
+        if (path.includes("linea-impresa.html")) return "bolsas";
+        return null;
+    }
+function renderizarProductos(listaProductos){
+const container = document.getElementById("productosContainer");
+container.innerHTML = "";
 
-function renderizarProductos(productos) {
-    const container = document.getElementById("productosContainer");
-    container.innerHTML = "";
-
-    productos.forEach(producto => {
+    listaProductos.forEach(producto => {
         const productoHTML = `
             <div class="productos_ctl">
                 <div class="image">
@@ -106,7 +186,69 @@ function renderizarProductos(productos) {
 
         container.innerHTML += productoHTML;
     });
+
 }
 
-// Ejecutar la función al cargar la página
-cargarProductos();
+// async function cargarProductos() {
+//     try {
+//         const response = await fetch('../data/catalogo.json');
+//         if (!response.ok) {
+//             throw new Error(`Error HTTP: ${response.status}`);
+//         }
+//         const productos = await response.json();
+
+//         // Detectar la categoría según el nombre de la página
+//         const categoria = obtenerCategoriaDeURL();
+
+//         if (!categoria || !productos[categoria]) {
+//             console.error("Categoría no encontrada en el JSON");
+//             return;
+//         }
+
+//         renderizarProductos(productos[categoria]);
+//     } catch (error) {
+//         console.error('Error al cargar los productos:', error);
+//     }
+// }
+
+// function obtenerCategoriaDeURL() {
+//     const path = window.location.pathname;
+//     if (path.includes("linea-fastfood.html")) return "fastfood";
+//     if (path.includes("linea-retail.html")) return "retail";
+//     if (path.includes("linea-limpieza.html")) return "limpieza";
+//     if (path.includes("linea-bolsas.html")) return "bolsas";
+//     if (path.includes("linea-impresa.html")) return "bolsas";
+//     return null;
+// }
+
+// function renderizarProductos(productos) {
+//     const container = document.getElementById("productosContainer");
+//     container.innerHTML = "";
+
+//     productos.forEach(producto => {
+//         const productoHTML = `
+//             <div class="productos_ctl">
+//                 <div class="image">
+//                     <img src="${producto.imagen}" alt="${producto.nombre}">
+//                 </div>
+//                 <div class="descripcion">
+//                     <dl>
+//                         <dt><h3>${producto.nombre}</h3></dt>
+//                         <dd><strong>Código:</strong> ${producto.codigo}</dd>
+//                         <dd><strong>Material:</strong> ${producto.material}</dd>
+//                         <dd><strong>Presentación:</strong> ${producto.presentacion}</dd>
+//                         <dd><strong>Embalaje:</strong> ${producto.embalaje}</dd>
+//                         <dd><strong>Módulo de venta:</strong> ${producto.moduloVenta}</dd>
+//                         <dd><strong>Dimensiones:</strong> ${producto.dimensiones}</dd>
+//                         <dd><strong>Color:</strong> ${producto.color}</dd>
+//                     </dl>
+//                 </div>
+//             </div>
+//         `;
+
+//         container.innerHTML += productoHTML;
+//     });
+// }
+
+// // Ejecutar la función al cargar la página
+// cargarProductos();
