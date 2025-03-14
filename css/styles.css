@@ -448,7 +448,7 @@ body {
 
 .image {
   padding: 0.25em;
-  width: 200px;
+  width: 300px;
 }
 @media (max-width: 450px) {
   .image {
