@@ -51,7 +51,7 @@ var productos = {
     moduloVenta: "20 fundas por fundón",
     dimensiones: "Alto: 45.5 mm / Ancho: 120.5 mm / Largo: 54.5 mm",
     color: "Blanco y amarillo",
-    imagen: "images/productos/fastfood/Repostero_4_3-4.jpg"
+    imagen: "../images/productos/fastfood/Repostero_4_3-4.jpg"
   }, {
     nombre: "Repostero de 5 onzas",
     codigo: "0507202",
@@ -61,7 +61,7 @@ var productos = {
     moduloVenta: "20 fundas por fund&oacute;n",
     dimensiones: "Alto: 35.2 mm / Diámetro: 120.5 mm / Diámetro inferior: 61.5mm",
     color: "Blanco y amarillo",
-    imagen: "images/productos/fastfood/Repostero_5onz.jpg"
+    imagen: "images/productos/fastfood/Contenedor_Alimentos_5_5.jpg"
   }, {
     nombre: "Repostero de 5 onzas",
     codigo: "0507202",
